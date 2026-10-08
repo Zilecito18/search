@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Product+Sans&display=swap');
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+/* Header Links */
+header {
+    padding: 15px 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.links a {
+    text-decoration: none;
+    color: #000;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Google Logo Text */
+.logo-container {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 25px;
+    position: relative;
+    user-select: none;
+}
+.logo-text {
+    font-size: 90px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+.logo-text-small {
+    font-size: 30px;
+    font-family: 'Product Sans', sans-serif;
+    font-weight: 500;
+    letter-spacing: -1px;
+    text-decoration: none;
+}
+.g-blue { color: #4285F4; }
+.o-red { color: #EA4335; }
+.o-yellow { color: #FBBC05; }
+.l-green { color: #34A853; }
+.e-red { color: #EA4335; }
+
+.logo-subtext {
+    position: absolute;
+    bottom: 0;
+    right: calc(50% - 110px);
+    color: #4285F4;
+    font-size: 16px;
+}
+
+/* Search Box */
+.main-search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 580px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    padding: 5px 15px;
+    box-sizing: border-box;
+    margin-bottom: 25px;
+}
+
+.search-bar:hover, .search-bar:focus-within {
+    box-shadow: 0 1px 6px rgba(32,33,36,.28);
+    border-color: rgba(223,225,229,0);
+}
+
+.search-icon {
+    width: 20px;
+    height: 20px;
+    fill: #9aa0a6;
+    margin-right: 10px;
+}
+
+.input-search {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    height: 34px;
+}
+
+/* Buttons */
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.btn {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    border-radius: 4px;
+    color: #3c4043;
+    font-family: inherit;
+    font-size: 14px;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.btn:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,.1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+/* Advanced Search Styles */
+.advanced-header {
+    padding: 20px 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+.advanced-header a {
+    text-decoration: none;
+}
+.advanced-main {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.advanced-title {
+    color: #d93025;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-weight: 500;
+}
+hr {
+    border: 0;
+    border-top: 1px solid #ebebeb;
+    margin-bottom: 30px;
+}
+.advanced-form {
+    display: block;
+    width: 100%;
+}
+.form-header {
+    display: flex;
+    font-size: 16px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.header-left {
+    width: 200px;
+}
+.header-right {
+    color: #777;
+    font-weight: normal;
+}
+.form-row {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.form-row label {
+    width: 200px;
+    font-size: 13px;
+    color: #222;
+}
+.adv-input {
+    width: 400px;
+    height: 25px;
+    border: 1px solid #d9d9d9;
+    border-top: 1px solid #c0c0c0;
+    padding: 1px 8px;
+    outline: none;
+    font-size: 13px;
+}
+.adv-input:focus {
+    border: 1px solid #4d90fe;
+}
+.adv-hint {
+    margin-left: 20px;
+    font-size: 11px;
+    color: #777;
+}
+.adv-button-container {
+    display: flex;
+    justify-content: flex-end;
+    width: 618px; /* Approx width of label + input */
+    margin-top: 20px;
+}
+.btn-adv {
+    background-color: #4d90fe;
+    background-image: linear-gradient(top,#4d90fe,#4787ed);
+    border: 1px solid #3079ed;
+    color: #fff;
+    font-weight: bold;
+    font-size: 11px;
+    padding: 0 12px;
+    height: 29px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+.btn-adv:hover {
+    background-color: #357ae8;
+    background-image: linear-gradient(top,#4d90fe,#357ae8);
+    border: 1px solid #2f5bb7;
+}
